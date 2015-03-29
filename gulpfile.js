@@ -1,21 +1,23 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sass( { errLogToConsole: true }))
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('./public/css'))
+    .pipe(reload({ stream: true }));
 });
 
-gulp.task('livereload', function() {
-  gulp.src('./public/**/*')
-    .pipe(connect.reload());
-});
+gulp.task('serve', ['sass'], function() {
+  browserSync({
+    proxy: "localhost:3000"
+  });
 
-gulp.task('watch', function() {
   gulp.watch('./sass/**/*.scss', ['sass']);
-  gulp.watch('./public/**/*', ['livereload']);
-  gulp.watch('./server/views/**/*.jade', ['livereload']);
+  gulp.watch('./public/**/*').on('change', reload);
+  gulp.watch('./server/views/**/*.jade').on('change', reload);
 });
 
-gulp.task('default', ['watch', 'sass']);
+gulp.task('default', ['serve', 'sass']);

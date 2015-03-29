@@ -5,11 +5,12 @@ var app = express();
 var methodOverride = require('method-override');
 var information = require('./controllers/information');
 var mongoose = require('mongoose');
-
+var jade = require('jade');
 mongoose.connect('mongodb://admin:'+process.env.DBPASS+'@ds031571.mongolab.com:31571/tech_women');
 
 // serves static assets
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/../public'));
+console.log(__dirname + '/../public');
 app.use(cookieParser());
 app.use(methodOverride('_method'));
 // parse application/x-www-form-urlencoded 
