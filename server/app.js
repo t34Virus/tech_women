@@ -10,7 +10,6 @@ mongoose.connect('mongodb://admin:'+process.env.DBPASS+'@ds031571.mongolab.com:3
 
 // serves static assets
 app.use(express.static(__dirname + '/../public'));
-console.log(__dirname + '/../public');
 app.use(cookieParser());
 app.use(methodOverride('_method'));
 // parse application/x-www-form-urlencoded 
