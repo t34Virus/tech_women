@@ -3,9 +3,9 @@ var Schema = mongoose.Schema;
 
 
 var informationSchema = new Schema({
-  author : { type: String, require: true },
-  title : { type: String, require: true },
-  body : { type: String, require: true },
+  author : String,
+  title : String,
+  body : String,
   created_at : { type: Date, default: Date.now },
   photoURL: String 
 });

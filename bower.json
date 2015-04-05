@@ -8,12 +8,13 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
+    "public/bower_components",
     "test",
     "tests"
   ],
   "dependencies": {
     "bootstrap": "~3.3.4",
-    "bootstrap-sass": "~3.3.4"
+    "bootstrap-sass": "~3.3.4",
+    "jquery": "~2.1.3"
   }
 }

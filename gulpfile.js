@@ -6,7 +6,7 @@ var reload = browserSync.reload;
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sass( { errLogToConsole: true }))
-    .pipe(gulp.dest('./public/css'))
+    .pipe(gulp.dest('./public/styles'))
     .pipe(reload({ stream: true }));
 });
 
