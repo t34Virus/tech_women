@@ -46,6 +46,9 @@ html {
   font-size: 38px;
   color: black;
 }
+#home .header.mobilepunch{
+  display: none;
+}
 #home .information p{
   color: black;
   font-weight: bolder;
@@ -159,5 +162,12 @@ html {
   #home .selection.list .right.floated {
     display: none;
   }
-
+  #home .header.punchline{
+    display: none !important;
+  }  
+  #home .header.mobilepunch{
+    display: inline-block;
+    font-size: 38px;
+    color: black;
+  }
 }
