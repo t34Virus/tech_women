@@ -32,7 +32,6 @@ $(document)
        on: 'hover'
       });
 
-
     $('.ui.form').
     form(validationRules, {
         on: 'blur'
