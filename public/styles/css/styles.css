@@ -28,9 +28,11 @@ html {
   max-width: 600px; }
 
 #home .masthead .image {
-  position: absolute;
+  /*position: absolute;*/
   left: 0%;
   bottom: -110px; }
+
+
 
 /*--------------
     Ribbons

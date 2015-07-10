@@ -1,15 +1,12 @@
-doctype
-html(lang="en")
+doctype html
+html(lang='en')
   head
-    meta(charset="UTF-8")
+    meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet", href="/styles/dist/semantic.css")
-    link(rel="stylesheet", href="/styles/styles.css")
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/styles/dist/semantic.css')
+    link(rel='stylesheet', href='/styles/styles.css')
 
-    script(type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js")
-    script(src="/styles/dist/semantic.js")
-    script(src="/js/main.js")
   body#home
     .ui.inverted.masthead.segment
       .ui.page.grid
@@ -17,28 +14,34 @@ html(lang="en")
           .ui.inverted.large.menu
             .header.item TechWomen
             .right.menu
-              .ui.mobile.dropdown.link.item Menu
-                i.dropdown.icon
-                .menu
-                  a.item Modern WonderWomen
-                  a.item Milestones
-                  a.item About
               a.item About
               a.item Modern WonderWomen
               a.item Milestones
               a.item Helpful Links
               a.item Contact Us
+              .ui.mobile.dropdown.link.item
+                | Menu
+                i.dropdown.icon
+                .menu
+                  a.item Classes
+                  a.item Community
+                  a.item Cocktail Hours
           img.ui.medium.image(src='/styles/css/images/merc.gif')
+
+          img.ui.hidden.medium.image.img1(src='/styles/css/images/angryWW.png')
+          img.ui.hidden.medium.image.img2(src='/styles/css/images/JUPI.gif')
+          img.ui.hidden.medium.image.img3(src='/styles/css/images/mars.gif')
+          img.ui.hidden.medium.image.img4(src='/styles/css/images/PLUT.gif')
+          img.ui.hidden.medium.image.img5(src='/styles/css/images/SAT.gif')
+          img.ui.hidden.medium.image.img6(src='/styles/css/images/URS.gif')
+
           .ui.hidden.content.information
             h1.ui.inverted.header.punchline Intelligent | Technical | FEMALE
             h1.ui.inverted.header.mobilepunch Intelligent Technical FEMALE
             p WomenInTech is a resource for female empowerment in the STEM fields.
-            |           
             .ui.inverted.large.black.animated.button
               .visible.content.serious Conventions Near You
-              |             
               .hidden.content Find Now
-    |   
     .ui.vertical.feature.segment
       .ui.centered.page.grid
         .fourteen.wide.column
@@ -46,104 +49,71 @@ html(lang="en")
             .column
               .ui.icon.header
                 i.student.icon
-                |Tutorials
-              |             
+                | Tutorials
               p To stop learning is to stop growing
-              |             
               p
-                a.ui.teal.button(href='#')
-                  | Learn
-            |           
+                a.ui.teal.button(href='#') Learn
             .column
               .ui.icon.header
                 i.code.icon
-                |Featured
-              |             
-              p The loneliness of the female coder
-                | 
-              |             
+                | Featured
+              p
+                | The loneliness of the female coder
               p
                 a.ui.teal.right.labeled.icon.button(href='#')
                   | Research
                   i.right.chevron.icon
-            |           
             .column
               .ui.icon.header
                 i.cocktail.icon
-                |Community
-              |             
+                | Community
+              p Find amazing TechWomen like you
               p
-                | Find amazing TechWomen like you
-              |             
-              p
-                a.ui.teal.button(href='#')
-                  | Share
-    |   
+                a.ui.teal.button(href='#') Share
     .ui.inverted.vertical.segment
       .ui.very.relaxed.stackable.page.grid
         .row
           .column
-            h1.center.aligned.ui.inverted.header
-              | Motivational Articles
-        |       
+            h1.center.aligned.ui.inverted.header Motivational Articles
         .row
           .ten.wide.column
             h3.ui.inverted.header How to maintain a competitive edge
-            |           
-            p
-              | Get noticed by staying involved
-            |           
+            p Get noticed by staying involved
             p This and other tips can be found in our newsletter, amazing right?
-            |           
             .ui.teal.inverted.animated.button.button
               .visible.content Read More
-              |             
               .hidden.content
                 i.right.arrow.icon
-            |           
             .ui.inverted.section.divider
-            |           
             h3.ui.inverted.header More articles
-            |           
             .ui.inverted.animated.selection.list
               .item
                 | Statistics
                 .right.floated Jan 20, 2023
-              |             
               .item
                 | Mentors
                 .right.floated Jan 1, 2023
-              |             
               .item
                 | Female Tech Titans
                 .right.floated Dec 20, 2022
-          |         
           .six.wide.column
             .ui.form.segment
               h3.ui.header Bi-Daily Newsletter
-              |             
-              p Sign up and get spammed with motivation every day. We have no unsubscribe button!
-              |             
+              p
+                | Sign up and get spammed with motivation every day. We have no unsubscribe button!
               .field
                 .ui.left.icon.action.input
                   i.mail.icon
-                  |                 
                   input(name='email', type='text', placeholder='name@email.com')
-                  |                 
                   .ui.black.submit.button Sign up
-              |             
               .ui.error.message
-    |   
     .ui.vertical.segment
       .ui.stackable.center.aligned.page.grid
         .row
           .column
-            h1.ui.header
-              | Movements Are Dependant on Involvement
-            |           
+            h1.ui.header Movements Are Dependant on Involvement
             .ui.horizontal.divider
               i.heart.icon
-        |       
         .four.column.logo.row
           .column
             .ui.shape
@@ -152,127 +122,90 @@ html(lang="en")
                   i.huge.github.icon
                 .side
                   i.huge.facebook.icon
-                |               
                 .side
                   i.huge.maxcdn.icon
-                |               
                 .side
                   i.huge.pinterest.icon
-                |               
                 .side
                   i.huge.weibo.icon
-                |               
                 .side
                   i.huge.flickr.icon
-          |         
           .column
             .ui.shape
               .sides
                 .side
                   i.huge.github.icon
-                |               
                 .side
                   i.huge.facebook.icon
-                |               
                 .active.side
                   i.huge.maxcdn.icon
-                |               
                 .side
                   i.huge.pinterest.icon
-                |               
                 .side
                   i.huge.weibo.icon
-                |               
                 .side
                   i.huge.flickr.icon
-          |         
           .column
             .ui.shape
               .sides
                 .side
                   i.huge.github.icon
-                |               
                 .side
                   i.huge.facebook.icon
-                |               
                 .side
                   i.huge.maxcdn.icon
-                |               
                 .side
                   i.huge.pinterest.icon
-                |               
                 .active.side
                   i.huge.weibo.icon
-                |               
                 .side
                   i.huge.flickr.icon
-          |         
           .column
             .ui.shape
               .sides
                 .side
                   i.huge.github.icon
-                |               
                 .side
                   i.huge.facebook.icon
-                |               
                 .side
                   i.huge.maxcdn.icon
-                |               
                 .side
                   i.huge.pinterest.icon
-                |               
                 .side
                   i.huge.weibo.icon
-                |               
                 .active.side
                   i.huge.flickr.icon
-    |   
     .ui.inverted.footer.vertical.segment
       .ui.stackable.center.aligned.page.grid
         .ten.wide.column
           .ui.three.column.center.aligned.stackable.grid
             .column
               h5.ui.inverted.header Courses
-              |             
               .ui.inverted.link.list
                 a.item Registration
-                |               
                 a.item Course Calendar
-                |               
                 a.item Professors
-            |           
             .column
               h5.ui.inverted.header Library
-              |             
               .ui.inverted.link.list
                 a.item A-Z
-                |               
                 a.item Most Popular
-                |               
                 a.item Recently Changed
-            |           
             .column
               h5.ui.inverted.header Community
-              |             
               .ui.inverted.link.list
                 a.item BBS
-                |               
                 a.item Careers
-                |               
                 a.item Privacy Policy
-        |       
         .six.wide.column
           h5.ui.inverted.header Contact Us
-          |         
           addr
-            | 237 Catberry Road 
+            | 237 Catberry Road
             br
-            |           Honolulu, HI
+            |  Honolulu, HI
             br
-          |         
           p (404) 867-5309
-
-
-
-  script(type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js")
+  script(type='text/javascript', src='http://code.jquery.com/jquery-1.10.2.min.js')
+  script(type='text/javascript', src='http://code.jquery.com/jquery-1.10.2.min.js')
+  script(src='/js/main.js')
+  script(src='/styles/dist/semantic.js')

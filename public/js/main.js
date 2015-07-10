@@ -23,11 +23,18 @@ $(document)
         }
       };
 
-    $('.ui.dropdown.link.item').dropdown({
+    $('img.ui.medium.image').dropdown({
         on: 'hover'
       });
 
-    $('.ui.form').form(validationRules, {
+    $('.ui.dropdown.link.item').dropdown({
+
+       on: 'hover'
+      });
+
+
+    $('.ui.form').
+    form(validationRules, {
         on: 'blur'
       });
 
