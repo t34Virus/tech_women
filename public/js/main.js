@@ -23,14 +23,44 @@ $(document)
         }
       };
 
-    $('img.ui.medium.image').dropdown({
-        on: 'hover'
+    $('.item.mile').click(
+      function(){ 
+        // $('.next h1.about').show();
+
+        $('.next h1.about').transition('slide down');
       });
 
-    $('.ui.dropdown.link.item').dropdown({
+    $('.item.about').click(
+      function(){ 
+        $('img.ui.medium img').hide()
 
-       on: 'hover'
+        $('img.ui.medium.image.img1').transition('slide down');
       });
+    $('.item.modern').click(
+      function(){ 
+        $('img.ui.medium img').hide()
+        // $(this).transition('slide right'),
+        $('img.ui.medium.image.img2').transition('slide up');
+      });
+    // $('img.ui.medium.image.img2').load(
+    //   function(){ 
+    //     $('img.ui.medium.image.img1').hide()
+    //     $(this).transition('slide right'),
+    //     $('img.ui.medium.image.img3').show();
+    //   });    
+    // $('img.ui.medium.image.img3').click(
+    //   function(){ 
+    //     $('img.ui.medium.image.img2').hide()
+    //     $(this).transition('slide right'),
+    //     $('img.ui.medium.image.img4').show();
+    //   });
+    // $('img.ui.medium.image.img4').click(
+    //   function(){ 
+    //     $('img.ui.medium.image.img3').hide()
+    //     $(this).transition('slide right'),
+    //     $('img.ui.medium.image.img5').show();
+
+    //   });
 
     $('.ui.form').
     form(validationRules, {

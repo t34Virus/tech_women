@@ -6,19 +6,22 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(rel='stylesheet', href='/styles/dist/semantic.css')
     link(rel='stylesheet', href='/styles/styles.css')
+    link(rel='stylesheet', href='http://kenwheeler.github.io/slick/slick/slick.css')
+    link(rel='stylesheet', href='http://kenwheeler.github.io/slick/slick/slick-theme.css')
 
   body#home
     .ui.inverted.masthead.segment
       .ui.page.grid
         .column
           .ui.inverted.large.menu
-            .header.item TechWomen
+            .header.item WomenInTech
             .right.menu
-              a.item About
-              a.item Modern WonderWomen
-              a.item Milestones
-              a.item Helpful Links
-              a.item Contact Us
+              a.item.about About
+
+              a.item.modern Modern WonderWomen
+              a.item.mile Milestones
+              a.item.links Helpful Links
+              a.item.contact Contact Us
               .ui.mobile.dropdown.link.item
                 | Menu
                 i.dropdown.icon
@@ -26,22 +29,26 @@ html(lang='en')
                   a.item Classes
                   a.item Community
                   a.item Cocktail Hours
-          img.ui.medium.image(src='/styles/css/images/merc.gif')
 
-          img.ui.hidden.medium.image.img1(src='/styles/css/images/angryWW.png')
-          img.ui.hidden.medium.image.img2(src='/styles/css/images/JUPI.gif')
-          img.ui.hidden.medium.image.img3(src='/styles/css/images/mars.gif')
-          img.ui.hidden.medium.image.img4(src='/styles/css/images/PLUT.gif')
-          img.ui.hidden.medium.image.img5(src='/styles/css/images/SAT.gif')
-          img.ui.hidden.medium.image.img6(src='/styles/css/images/URS.gif')
+          .next        
+            //- h1.hidden.about 
 
-          .ui.hidden.content.information
-            h1.ui.inverted.header.punchline Intelligent | Technical | FEMALE
-            h1.ui.inverted.header.mobilepunch Intelligent Technical FEMALE
-            p WomenInTech is a resource for female empowerment in the STEM fields.
-            .ui.inverted.large.black.animated.button
-              .visible.content.serious Conventions Near You
-              .hidden.content Find Now
+            img.ui.medium.image(src='/styles/css/images/merc.gif')
+
+            img.ui.hidden.medium.image.img1(src='/styles/css/images/angryWW.png')
+            img.ui.hidden.medium.image.img2(src='/styles/css/images/JUPI.gif')
+            img.ui.hidden.medium.image.img3(src='/styles/css/images/mars.gif')
+            img.ui.hidden.medium.image.img4(src='/styles/css/images/PLUT.gif')
+            img.ui.hidden.medium.image.img5(src='/styles/css/images/SAT.gif')
+            img.ui.hidden.medium.image.img6(src='/styles/css/images/URS.gif')
+
+            .ui.hidden.content.information
+              h1.ui.inverted.header.punchline Intelligent | Technical | FEMALE
+              h1.ui.inverted.header.mobilepunch Intelligent Technical FEMALE
+              p WomenInTech is a resource for female empowerment in the STEM fields.
+              .ui.inverted.large.black.animated.button
+                .visible.content.serious Conventions Near You
+                .hidden.content Find Now
     .ui.vertical.feature.segment
       .ui.centered.page.grid
         .fourteen.wide.column
@@ -207,5 +214,6 @@ html(lang='en')
           p (404) 867-5309
   script(type='text/javascript', src='http://code.jquery.com/jquery-1.10.2.min.js')
   script(type='text/javascript', src='http://code.jquery.com/jquery-1.10.2.min.js')
+  script(type='text/javascript', src='http://kenwheeler.github.io/slick/slick/slick.js')
   script(src='/js/main.js')
   script(src='/styles/dist/semantic.js')

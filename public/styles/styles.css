@@ -81,6 +81,9 @@ html {
 #home .logo.row {
   height: 10rem; }
 
+.next h1 {
+  display: none; }
+
 /*--------------
     Footer
 ---------------*/

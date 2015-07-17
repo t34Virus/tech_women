@@ -18,6 +18,14 @@ html {
   margin: 0em;
   padding: 5rem 0rem; }
 
+#home .masthead .segment {
+  display: block;
+  /*position: absolute; */
+  width: 807px;
+  height: 496px;
+}
+
+
 #home .masthead .column {
   position: relative; }
 
